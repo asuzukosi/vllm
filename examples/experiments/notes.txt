@@ -22,4 +22,6 @@ Where does infrastruture like deepspeed come in, or fastchat, maybe fastagent in
 How do we connect the pieces together? what is triton? how does openai serve so many users at such low latency with LLMs, how are their models fragmented if fragmented? what are the quantization techniques used if any?
 All this is crazy! So vLLM is the backend, deepspeed, raylib etc are the backend of the backend. Fastchat and FastAgent are the frontend?
 
-TF is sky pilot?
+TF is skypilot?
+
+AI agents with tools are the frontend. Well, if i'm wrong, i'm fucked.
