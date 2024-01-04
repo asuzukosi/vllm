@@ -1,3 +1,25 @@
 ROCm is the CUDA equivalent for AMD GPUs, it is used for writign kernels which are micro applications used to allow the CPU communicate with the GPUs
 
 The entry points define terminal, openai server and custom entry server entrypoints into the vllm system while the engine does the processing of the request
+
+vLLM can support multiple workers, which can be multiple GPUs, it can work with centralized controllers only with the CPU
+- Sheduler
+- BlockSpaceManager
+- BlockAllocator
+
+There is a centralized controller and distributed workers for the system. 
+Scheduler prepares the requests at each step
+Workers run the models with paged attention
+
+Whats the difference between a serving library and an inference engine
+
+DeepSpeed-FastGen Dynamic SplitFuse optimization. This optimization is on vLLM’s roadmap
+
+So the rabit hole goes deep, but its an interesting space, It covers how to make LLMs more efficient for inference
+
+So where does llama.cpp come in in all this, and how do they connect together? do they connect together? and how can we think about LVA models to be used as agents and building efficient backends and frontends for them
+Where does infrastruture like deepspeed come in, or fastchat, maybe fastagent in future?
+How do we connect the pieces together? what is triton? how does openai serve so many users at such low latency with LLMs, how are their models fragmented if fragmented? what are the quantization techniques used if any?
+All this is crazy! So vLLM is the backend, deepspeed, raylib etc are the backend of the backend. Fastchat and FastAgent are the frontend?
+
+TF is sky pilot?
