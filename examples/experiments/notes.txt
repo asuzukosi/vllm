@@ -25,3 +25,6 @@ All this is crazy! So vLLM is the backend, deepspeed, raylib etc are the backend
 TF is skypilot?
 
 AI agents with tools are the frontend. Well, if i'm wrong, i'm fucked.
+
+BentoML offers a suite of products for efficient LLM deployment
+Foundation models FTW
