@@ -28,3 +28,5 @@ AI agents with tools are the frontend. Well, if i'm wrong, i'm fucked.
 
 BentoML offers a suite of products for efficient LLM deployment
 Foundation models FTW
+
+Bridging neurosymbolic ai ideas as middleware for llm agent applications (or RL)
